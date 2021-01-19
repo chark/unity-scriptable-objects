@@ -4,7 +4,8 @@ on:
   push:
     branches: [ master ]
   pull_request:
-    branches: [ master ]
+    # branches: [ master ]
+    branches: [ actions-fix ]
 
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -23,7 +24,7 @@ jobs:
       # Test
       - name: Run Tests
         id: testRunner
-        uses: webbertakken/unity-test-runner@v1.3
+        uses: webbertakken/unity-test-runner@v1.7
         with:
           projectPath: .
           unityVersion: 2019.4.11f1
