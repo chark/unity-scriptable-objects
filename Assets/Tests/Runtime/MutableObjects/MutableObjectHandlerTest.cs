@@ -11,7 +11,7 @@ namespace MutableObjects
     public class MutableObjectHandlerTest
     {
         [UnityTest]
-        public IEnumerable ShouldResetAppropriateObjects()
+        public IEnumerator ShouldResetAppropriateObjects()
         {
             // The resetting tests must be in one test cases, otherwise problems with race
             // conditions arise (while testing).
