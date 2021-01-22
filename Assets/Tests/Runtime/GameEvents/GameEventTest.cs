@@ -12,6 +12,7 @@ using GameEvents.Vector3;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.TestTools;
 using Assert = UnityEngine.Assertions.Assert;
 
 namespace GameEvents
@@ -122,6 +123,8 @@ namespace GameEvents
         [Test]
         public void ShouldNotBreakChainWhenExceptionIsThrown()
         {
+            LogAssert.ignoreFailingMessages = true;
+
             // Given.
             var gameObject = new UnityEngine.GameObject();
             gameObject.SetActive(false);
