@@ -2,6 +2,9 @@
 [![Unity 2019.4+](https://img.shields.io/badge/unity-2019.4%2B-blue.svg)](https://unity3d.com/get-unity/download)
 [![Actions Status](https://github.com/chark/unity-scriptable-objects/workflows/CI/badge.svg)](https://github.com/chark/unity-scriptable-objects/actions)
 
+⚠️ **We are deprecating/splitting up this repository. No new features will be added except for bug fixes. Further development will continue on:**
+- https://github.com/chark/scriptable-events
+
 This package provides utilities for implementing game architecture which is oriented around `ScriptableObject` assets and game events. Most of these ideas are based on [Unite2017](https://github.com/roboryantron/Unite2017).
 
 ## Features
